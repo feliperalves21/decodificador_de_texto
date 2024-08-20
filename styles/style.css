@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+body { 
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    color: darkblue;
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.botoes{
+    display: flex;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.area_de_texto{
+    height: 85vh;
+    width: 70vh;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.area_de_texto textarea::placeholder{
+    font-weight: bold;
+    color: darkblue;
+    font-size: 24px;
+}
+
+.campo_texto{
+    resize: none;
+    border: 2px solid white;
+    border-radius: 16px;
+    font-size: 23px;
+    outline: none;
+}
+
+.alerta{
+    color: gray;
+}
+
+.botao_criptografar{
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 24px;
+    color: white;
+    background-color: #0A3871;
+    font-size: 16px;
+    width: 328px;
+}
+
+.botao_descriptografar {
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    background-color: white;
+    font-size: 16px;
+    width: 328px;
+}
+
+.texto_descriptografado{
+    height: 85.5vh;
+    width: 50vh;
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texto_descriptografado textarea::placeholder{
+    font-weight: bold;
+    color: darkblue;
+    font-size: 24px;
+}
