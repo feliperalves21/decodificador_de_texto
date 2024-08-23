@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --cor-primaria:  #102752;
+    --cor-secundaria: #47B5FF;
+    --cor-terciaria: #1363DF;
+}
+
 
 * {
     margin: 0;
@@ -10,17 +16,18 @@
 
 body { 
     box-sizing: border-box;
-    background-color: #F3F5FC;
-    color: darkblue;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
 
 .logo{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .botoes{
     display: flex;
     font-size: 16px;
+    gap: 5px;
 }
 
 .container{
@@ -28,6 +35,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .area_de_texto{
@@ -38,47 +46,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    order: 1 50%;
 }
 
 .area_de_texto textarea::placeholder{
     font-weight: bold;
-    color: darkblue;
+    color: var(--cor-secundaria);
     font-size: 24px;
 }
 
-.campo_texto{
-    resize: none;
-    border: 2px solid white;
-    border-radius: 16px;
-    font-size: 23px;
-    outline: none;
-}
-
-.alerta{
-    color: gray;
-}
-
-.botao_criptografar{
-    border: 2px solid;
-    border-radius: 24px;
-    padding: 24px;
-    color: white;
-    background-color: #0A3871;
-    font-size: 16px;
-    width: 328px;
-}
-
-.botao_descriptografar {
-    border: 2px solid;
-    border-radius: 24px;
-    padding: 24px;
-    color: #0A3871;
-    background-color: white;
-    font-size: 16px;
-    width: 328px;
-}
-
-.texto_descriptografado{
+.resultado{
     height: 85.5vh;
     width: 50vh;
     margin-top: 30px;
@@ -86,10 +63,73 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    order: 2;
 }
 
-.texto_descriptografado textarea::placeholder{
+.resultado textarea::placeholder{
     font-weight: bold;
-    color: darkblue;
+    color: var(--cor-secundaria);
     font-size: 24px;
+}
+
+.campo_texto{
+    resize: none;
+    border: 2px solid var(--cor-primaria);
+    font-size: 23px;
+    outline: none;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    caret-color: var(--cor-secundaria);
+}
+/* Todo código abaixo visa ocultar o placeholder quando o usuário clica no textarea*/
+
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+.alerta{
+    color: var(--cor-secundaria);
+}
+
+.botao_criptografar{
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-size: 16px;
+    width: 328px;
+    cursor: pointer;
+    
+}
+
+.botao_descriptografar {
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    font-size: 16px;
+    width: 328px;
+    cursor: pointer;
+}
+
+.botao_copiar {
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-size: 16px;
+    width: 328px;
+    cursor: pointer;
+}
+
+
+
+.rodape {
+    margin-top: 20px ;
+    text-align: center;
+    order: 3;
+    flex-basis: 100%;
 }
