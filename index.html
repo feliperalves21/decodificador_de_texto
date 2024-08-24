@@ -13,15 +13,15 @@
 </header>
 <main class="container">
     <section class="area_de_texto">
-        <textarea autofocus id="criptografar" rows="35" cols="60" placeholder="Digite seu Texto" class="campo_texto"></textarea>
+        <textarea autofocus id="area_de_texto" rows="35" cols="60" placeholder="Digite seu Texto" class="campo_texto"></textarea>
         <p class="alerta"><img src="./Assets/alerta.svg"> Apenas letras minúsculas e sem acento.</p>
         <div class="botoes">
-            <button class="botao_criptografar" onclick="criptografar()">Criptografar</button>
-            <button class="botao_descriptografar"  onclick="descriptografar()">Descriptografar</button>
+            <button class="btn_criptografar" onclick="criptografar()">Criptografar</button>
+            <button class="btn_descriptografar"  onclick="descriptografar()">Descriptografar</button>
         </div>
     </section>
     <section class="resultado">
-        <textarea readonly id="descriptografar" rows="45" cols="60" placeholder="Nenhuma mensagem encontrada" class="campo_texto"></textarea>
+        <textarea readonly id="resultado" rows="35" cols="60" placeholder="Nenhuma mensagem encontrada" class="campo_texto"></textarea>
         <button class="botao_copiar" onclick="copiar()">Copiar Texto</button>
     </section>
     <footer class="rodape">Feito por Felipe da Rocha Alves</footer>
