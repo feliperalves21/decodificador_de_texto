@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador de Texto</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 <header class="logo">
@@ -13,19 +14,18 @@
 </header>
 <main class="container">
     <section class="area_de_texto">
-        <textarea autofocus id="area_de_texto" rows="35" cols="60" placeholder="Digite seu Texto" class="campo_texto"></textarea>
-        <p class="alerta"><img src="./Assets/alerta.svg"> Apenas letras minúsculas e sem acento.</p>
+        <textarea autofocus id="textarea1" rows="35" cols="60" placeholder="Digite seu Texto" class="campo_texto"></textarea>
+        <p class="alerta"><img src="./Assets/alerta.png"> Apenas letras minúsculas e sem acento.</p>
         <div class="botoes">
             <button class="btn_criptografar" onclick="criptografar()">Criptografar</button>
             <button class="btn_descriptografar"  onclick="descriptografar()">Descriptografar</button>
         </div>
     </section>
     <section class="resultado">
-        <textarea readonly id="resultado" rows="35" cols="60" placeholder="Nenhuma mensagem encontrada" class="campo_texto"></textarea>
+        <textarea readonly id="textarea2" rows="35" cols="60" placeholder="Nenhuma mensagem encontrada" class="campo_texto"></textarea>
         <button class="botao_copiar" onclick="copiar()">Copiar Texto</button>
     </section>
     <footer class="rodape">Feito por Felipe da Rocha Alves</footer>
 </main>
 </body>
-<script src="./script.js"></script>
 </html>
