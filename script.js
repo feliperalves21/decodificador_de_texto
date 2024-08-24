@@ -8,7 +8,7 @@ function criptografia(metodo) {
     //Pegando o que foi digitado no textarea.
     let campo_criptografar = document.getElementById('textarea1').value;
     //Se o texto do usuário estiver de acordo, procede com a criptografia
-    if (isValidText(campo_criptografar)) {
+    if ((isValidText(campo_criptografar))) {
         let texto_final;
         if(metodo === "criptografar"){
             texto_final = campo_criptografar.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
@@ -20,8 +20,10 @@ function criptografia(metodo) {
         //Preenchendo o campo de resultado após fazer a criptografia do texto
         document.getElementById("textarea2").value = texto_final;
     }
-    else{
-        alert("Apenas letras minúsculas e sem acento.")
+    else if ((campo_criptografar === '')){
+        alerta("error", "Erro!", "Preencha o campo antes de clicar no botão!")
+    }else{
+        alerta("error", "Erro!", "Apenas letras minúsculas e sem acento.")
     } 
 }
 
@@ -41,5 +43,13 @@ function descriptografar(){
 function copiar(){
     texto_copiado = document.getElementById("textarea2").value;
     navigator.clipboard.writeText(texto_copiado);
-    alert("Texto copiado!");
+    alerta('success', 'Sucesso', 'Texto copiado com sucesso!')
+}
+
+function alerta(icon, title, texto) {
+    Swal.fire({
+        icon: icon,
+        title: title,
+        text: texto
+    });
 }
