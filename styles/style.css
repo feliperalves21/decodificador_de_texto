@@ -34,15 +34,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
     flex-wrap: wrap;
 }
 
 .area_de_texto{
     height: 85vh;
-    width: 70vh;
+    width: 50vh;
     margin-top: 30px;
-    margin-left: 40px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -56,20 +56,23 @@ body {
 }
 
 .resultado{
-    height: 85.5vh;
+    height: 85vh;
     width: 50vh;
     margin-top: 30px;
-    margin-left: 40px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     order: 2;
+    justify-content: center;
+    align-items: center;
 }
 
 .resultado textarea::placeholder{
     font-weight: bold;
     color: var(--cor-secundaria);
     font-size: 24px;
+    text-align: center;
 }
 
 .campo_texto{
@@ -83,7 +86,7 @@ body {
 }
 /* Todo código abaixo visa ocultar o placeholder quando o usuário clica no textarea*/
 
-textarea:focus::placeholder{
+#area_de_texto:focus::placeholder{
     color: transparent;
 }
 
@@ -91,7 +94,7 @@ textarea:focus::placeholder{
     color: var(--cor-secundaria);
 }
 
-.botao_criptografar{
+.btn_criptografar{
     border: 2px solid;
     border-radius: 24px;
     padding: 24px;
@@ -103,7 +106,7 @@ textarea:focus::placeholder{
     
 }
 
-.botao_descriptografar {
+.btn_descriptografar {
     border: 2px solid;
     border-radius: 24px;
     padding: 24px;
@@ -128,7 +131,8 @@ textarea:focus::placeholder{
 
 
 .rodape {
-    margin-top: 20px ;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
     order: 3;
     flex-basis: 100%;
