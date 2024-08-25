@@ -22,18 +22,30 @@ body {
 
 .logo{
     margin-top: 0.6rem;
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.logo img{
+    max-width: 2rem;
 }
 
 .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5rem;
 }
 
 .campo_texto{
     resize: none;
-    border: 0.125rem solid var(--cor-primaria);
+    border: 0.125rem solid var(--cor-terciaria);
+    border-radius: 2rem;
+    padding: 1rem;
     font-size: 1.45rem;
     outline: none;
     color: var(--cor-secundaria);
@@ -43,9 +55,8 @@ body {
 
 .area_de_texto{
     height: 82vh;
-    width: 70vh;
+    width: 68%;
     margin-top: 1.9rem;
-    margin-left: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -54,6 +65,7 @@ body {
 
 .alerta{
     color: var(--cor-secundaria);
+    font-size: 1.5rem;
 }
 
 .area_de_texto img{
@@ -76,23 +88,28 @@ body {
     gap: 0.3rem;
 }
 
+.btn_criptografar, .btn_descriptografar{
+    width: 50%;
+}
+
+.btn_copiar{
+    width: 100%;
+}
+
 .btn_criptografar, .btn_descriptografar, .btn_copiar{
     border: 0.125rem solid;
     border-radius: 1.5rem;
     padding: 1.5rem;
     font-size: 1rem;
-    width: 20.5rem;
     cursor: pointer;
-}
-
-.btn_criptografar, .btn_copiar{
-    color: var(--cor-secundaria);
-    background-color: var(--cor-terciaria);
-}
-
-.btn_descriptografar {
     color: var(--cor-secundaria);
     background-color: var(--cor-primaria);
+    font-size: 2rem;
+}
+
+.btn_criptografar:hover, .btn_copiar:hover, .btn_descriptografar:hover{
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
 }
 
 .btn_copiar{
@@ -101,7 +118,7 @@ body {
 
 .resultado{
     height: 82vh;
-    width: 50vh;
+    width: 25%;
     margin-top: 1.9rem;
     display: flex;
     flex-direction: column;
@@ -110,7 +127,7 @@ body {
 }
 
 #textarea2 {
-    background-image: url(../imagens/pesquisa.png);
+    background-image: url(../assets/pesquisa.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 11rem;
@@ -126,10 +143,16 @@ body {
 }
 
 .rodape {
-    margin-top: 1.25rem;
     text-align: center;
     order: 3;
     flex-basis: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
 }
 
 .rodape img{
@@ -159,8 +182,19 @@ body {
 }
 
 @media (min-width: 1200px) {
+    body{
+        zoom: 97%;
+    }
+    
     .rodape{
        position: absolute;
        bottom: 0.2rem;
     }
 }
+
+@media (max-width: 1200px) {
+    body{
+        zoom: 90%;
+    }
+}
+

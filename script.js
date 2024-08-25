@@ -15,6 +15,8 @@ function criptografia(metodo) {
         } else if(metodo === "descriptografar"){
             texto_final = campo_criptografar.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
         }
+        // Limpar o textarea 1
+        document.getElementById("textarea1").value = '';
         //A imagem de fundo desaparece se a criptografia for realizada
         document.getElementById('textarea2').style.backgroundImage = 'none';
         //Preenchendo o campo de resultado após fazer a criptografia do texto
@@ -41,15 +43,19 @@ function descriptografar(){
 // Utilização da Clipboard API para copiar o texto para a área de transferência do usuário
 
 function copiar(){
-    texto_copiado = document.getElementById("textarea2").value;
-    navigator.clipboard.writeText(texto_copiado);
-    alerta('success', 'Sucesso', 'Texto copiado com sucesso!')
+    let texto_copiado = document.getElementById("textarea2").value;
+    if (texto_copiado === ""){
+        alerta('error', '', 'Nenhuma mensagem encontrada para copiar!')    
+    }else{
+        navigator.clipboard.writeText(texto_copiado);
+        alerta('success', 'Sucesso', 'Texto copiado com sucesso!')
+    }
 }
 
 function alerta(icon, title, texto) {
     Swal.fire({
         icon: icon,
         title: title,
-        text: texto
+        text: texto,
     });
 }
