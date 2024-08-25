@@ -42,7 +42,7 @@ body {
 }
 
 .area_de_texto{
-    height: 78vh;
+    height: 82vh;
     width: 70vh;
     margin-top: 1.9rem;
     margin-left: 2.5rem;
@@ -100,7 +100,7 @@ body {
 }
 
 .resultado{
-    height: 78vh;
+    height: 82vh;
     width: 50vh;
     margin-top: 1.9rem;
     display: flex;
@@ -114,7 +114,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 11rem;
+    padding-bottom: 4rem;
 }
+
 
 .resultado #textarea2::placeholder{
     font-weight: bold;
@@ -128,6 +130,11 @@ body {
     text-align: center;
     order: 3;
     flex-basis: 100%;
+}
+
+.rodape img{
+    max-width: 1.5rem;
+    margin-right: 0.3rem;
 }
 
 @media (max-width: 1200px) {
@@ -144,11 +151,16 @@ body {
     #textarea2{
         max-width: 100%;
     }
+
+    .rodape{
+        position: relative;
+        bottom: 0.2rem;
+    }
 }
 
 @media (min-width: 1200px) {
     .rodape{
-        position: absolute;
-        bottom: 1.5rem;
+       position: absolute;
+       bottom: 0.2rem;
     }
 }
