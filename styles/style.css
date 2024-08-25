@@ -20,9 +20,7 @@ body {
 }
 
 .logo {
-    margin-top: 0.6rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.6rem auto 1rem;
     display: flex;
     gap: 0.7rem;
     align-items: center;
@@ -32,8 +30,6 @@ body {
     border-radius: 1rem;
     padding: 1rem;
     width: 90%;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
 }
 
 .logo img {
@@ -45,7 +41,7 @@ body {
     margin: 0;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +50,7 @@ body {
     margin-left: 0;
 }
 
-.campo_texto{
+.campo_texto {
     resize: none;
     border: 0.125rem solid var(--cor-terciaria);
     border-radius: 2rem;
@@ -66,51 +62,53 @@ body {
     caret-color: var(--cor-secundaria);
 }
 
-.area_de_texto{
+.area_de_texto {
     height: 71vh;
     width: 60%;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
+    margin: 1rem 0 0 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    order: 1 50%;   
+    order: 1;
 }
 
-.alerta{
+.alerta {
     color: var(--cor-secundaria);
     font-size: 1.5rem;
 }
 
-.area_de_texto img{
+.area_de_texto img {
     max-width: 1.25rem;
 }
 
-.area_de_texto textarea::placeholder{
+.area_de_texto textarea::placeholder {
     font-weight: bold;
     color: var(--cor-secundaria);
     font-size: 2rem;
 }
 
-#textarea1:focus::placeholder{
+#textarea1:focus::placeholder {
     color: transparent;
 }
 
-.botoes{
+.botoes {
     display: flex;
     font-size: 1rem;
     gap: 0.3rem;
 }
 
-.btn_criptografar, .btn_descriptografar{
+.btn_criptografar,
+.btn_descriptografar {
     width: 50%;
 }
 
-.btn_copiar{
+.btn_copiar {
     width: 100%;
 }
 
-.btn_criptografar, .btn_descriptografar, .btn_copiar{
+.btn_criptografar,
+.btn_descriptografar,
+.btn_copiar {
     border: 0.125rem solid;
     border-radius: 1.5rem;
     padding: 1rem;
@@ -120,16 +118,18 @@ body {
     background-color: var(--cor-primaria);
 }
 
-.btn_criptografar:hover, .btn_copiar:hover, .btn_descriptografar:hover{
+.btn_criptografar:hover,
+.btn_copiar:hover,
+.btn_descriptografar:hover {
     color: var(--cor-terciaria);
     background-color: var(--cor-secundaria);
 }
 
-.btn_copiar{
+.btn_copiar {
     align-self: center;
 }
 
-.resultado{
+.resultado {
     height: 70vh;
     width: 30%;
     margin-top: 1.9rem;
@@ -147,7 +147,7 @@ body {
     padding-bottom: 4rem;
 }
 
-.resultado #textarea2::placeholder{
+.resultado #textarea2::placeholder {
     font-weight: bold;
     color: var(--cor-secundaria);
     font-size: 2rem;
@@ -157,22 +157,20 @@ body {
 .rodape {
     text-align: center;
     order: 3;
-    flex-basis: auto;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
     width: 91%;
-    font-size: 1.7rem;
     border: 2px solid var(--cor-secundaria);
     border-radius: 1rem;
     padding: 1rem;
 }
 
-.rodape a{
+.rodape a {
     text-decoration: none;
     color: white;
 }
 
-.rodape img{
+.rodape img {
     max-width: 1.5rem;
     margin-right: 0.3rem;
 }
