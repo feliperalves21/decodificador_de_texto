@@ -6,7 +6,6 @@
     --cor-terciaria: #1363DF;
 }
 
-
 * {
     margin: 0;
     padding: 0; 
@@ -20,17 +19,30 @@ body {
     background-color: var(--cor-primaria);
 }
 
-.logo{
+.logo {
     margin-top: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     gap: 0.7rem;
     align-items: center;
     justify-content: center;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    border: 2px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 90%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-.logo img{
-    max-width: 2rem;
+.logo img {
+    max-width: 3rem;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 0;
 }
 
 .container{
@@ -38,7 +50,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 3rem;
+    margin-left: 0;
 }
 
 .campo_texto{
@@ -54,13 +67,14 @@ body {
 }
 
 .area_de_texto{
-    height: 82vh;
-    width: 68%;
-    margin-top: 1.9rem;
+    height: 71vh;
+    width: 60%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
-    order: 1 50%;
+    gap: 1rem;
+    order: 1 50%;   
 }
 
 .alerta{
@@ -99,12 +113,11 @@ body {
 .btn_criptografar, .btn_descriptografar, .btn_copiar{
     border: 0.125rem solid;
     border-radius: 1.5rem;
-    padding: 1.5rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: var(--cor-secundaria);
     background-color: var(--cor-primaria);
-    font-size: 2rem;
 }
 
 .btn_criptografar:hover, .btn_copiar:hover, .btn_descriptografar:hover{
@@ -117,12 +130,12 @@ body {
 }
 
 .resultado{
-    height: 82vh;
-    width: 25%;
+    height: 70vh;
+    width: 30%;
     margin-top: 1.9rem;
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 3.8rem;
     order: 2;
 }
 
@@ -134,7 +147,6 @@ body {
     padding-bottom: 4rem;
 }
 
-
 .resultado #textarea2::placeholder{
     font-weight: bold;
     color: var(--cor-secundaria);
@@ -145,9 +157,14 @@ body {
 .rodape {
     text-align: center;
     order: 3;
-    flex-basis: 100%;
+    flex-basis: auto;
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    width: 91%;
+    font-size: 1.7rem;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .rodape a{
@@ -159,42 +176,3 @@ body {
     max-width: 1.5rem;
     margin-right: 0.3rem;
 }
-
-@media (max-width: 1200px) {
-    .container {
-        flex-direction: column;
-    }
-    .resultado {
-        margin-left: 0;
-        justify-content: center;
-        align-items: center;
-        width: 65vh;
-    }
-
-    #textarea2{
-        max-width: 100%;
-    }
-
-    .rodape{
-        position: relative;
-        bottom: 0.2rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    body{
-        zoom: 97%;
-    }
-    
-    .rodape{
-       position: absolute;
-       bottom: 0.2rem;
-    }
-}
-
-@media (max-width: 1200px) {
-    body{
-        zoom: 90%;
-    }
-}
-
