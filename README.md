@@ -37,9 +37,3 @@ Este projeto é uma aplicação web simples que permite criptografar e descripto
 1. Acesse o site do projeto:
 
    https://feliperalves21.github.io/decodificador_de_texto/
-
-### Você também pode clonar este repositório e executá-lo no seu próprio computador!
-
-   ```bash
-   git clone https://github.com/feliperalves21/decodificador_de_texto.git
-
