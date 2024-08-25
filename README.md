@@ -41,5 +41,5 @@ Este projeto é uma aplicação web simples que permite criptografar e descripto
 ### Você também pode clonar este repositório e executá-lo no seu próprio computador!
 
    ```bash
-   git clone https://github.com/seu-usuario/projeto-criptografia.git
+   git clone https://github.com/feliperalves21/decodificador_de_texto.git
 
