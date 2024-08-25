@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-![Web 1](https://github.com/feliperalves21/decodificador_de_texto/tree/master/assets/tela_decodificador.png)
+![Web 1](https://github.com/feliperalves21/decodificador_de_texto/assets/tela_decodificador.png)
 
 Este projeto é uma aplicação web simples que permite criptografar e descriptografar textos usando uma técnica básica de substituição de caracteres. O usuário pode inserir um texto no campo de entrada e escolher entre as opções de "Criptografar" e "Descriptografar". O texto resultante é exibido em um segundo campo de texto.
 
